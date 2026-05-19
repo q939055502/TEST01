@@ -1,0 +1,19 @@
+[tool.alembic]
+script_location = "migrations"
+url = "postgresql+asyncpg://user:password@localhost/dbname"
+# 或者如果你用 SQLite：
+# url = "sqlite+aiosqlite:///./app.db"
+
+# 可选：启用日志
+verbose = true
+
+
+[project]
+name = "test-05"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "alembic>=1.18.4",
+]
